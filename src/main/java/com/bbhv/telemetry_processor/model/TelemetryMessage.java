@@ -16,4 +16,8 @@ public class TelemetryMessage implements Serializable {
     private double longitude;
     private int h2Level;
     private long timestamp;
+
+    public TelemetryMessage(String carId) {
+        this.carId = carId;
+    }
 }

@@ -33,5 +33,7 @@ public class SimulationRunner implements CommandLineRunner {
         car2.setH2Level(95);
         car2.setTimestamp(System.currentTimeMillis());
         producerService.sendMessage(car2);
+
+        System.out.println("Simulation finished, checking Kafka...");
     }
 }
